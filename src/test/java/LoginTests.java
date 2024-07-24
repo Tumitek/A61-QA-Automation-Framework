@@ -21,5 +21,6 @@ public class LoginTests extends BaseTest {
         driver.get(url);
         Assert.assertEquals(driver.getCurrentUrl(), url);
         driver.quit();
+        // What the fuck with these instructions they are all over.
     }
 }
