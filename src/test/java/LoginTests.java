@@ -3,10 +3,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
+import static org.testng.Assert.assertEquals;
 import java.time.Duration;
 
-import static org.testng.Assert.assertEquals;
 
 public class LoginTests extends BaseTest {
     @Test
@@ -21,7 +20,7 @@ public class LoginTests extends BaseTest {
 
         String url = "https://testpro.io/";
         driver.get(url);
-        Assert.assertEquals(driver.getCurrentUrl(), url);
+        assertEquals(driver.getCurrentUrl(), url);
         driver.quit();
     }
 }
